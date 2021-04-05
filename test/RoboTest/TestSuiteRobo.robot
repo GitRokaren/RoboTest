@@ -59,6 +59,9 @@ MySecondTest
 
 MyThirdTest
     Log    Hello3    
+    
+MyFourhtTest
+    Log    Fourth Hello    
 FirstSeleniumTest
     [Tags]    Sele
     Set Browser Implicit Wait    50
