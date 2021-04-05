@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.2 on win32)" generated="20210402 14:30:32.629" rpa="false">
+<suite id="s1" name="TestSuiteRobo" source="C:\Users\jeffe\Desktop\Eclipse_2021\Eclipse_2021_workspace\test\RoboTest\TestSuiteRobo.robot">
+<test id="s1-t1" name="FirstSeleniumTest">
+<kw name="Open Browser" library="SeleniumLibrary" type="setup">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://duckduckgo.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20210402 14:30:33.128" level="INFO">Opening browser 'chrome' to base url 'https://duckduckgo.com'.</msg>
+<status status="PASS" starttime="20210402 14:30:33.127" endtime="20210402 14:30:38.091"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>50</arg>
+</arguments>
+<status status="PASS" starttime="20210402 14:30:38.109" endtime="20210402 14:30:38.114"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>flashback</arg>
+</arguments>
+<msg timestamp="20210402 14:30:38.116" level="INFO">Typing text 'flashback' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20210402 14:30:38.116" endtime="20210402 14:30:38.827"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>50</arg>
+</arguments>
+<status status="PASS" starttime="20210402 14:30:38.837" endtime="20210402 14:30:38.845"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>S</arg>
+</arguments>
+<msg timestamp="20210402 14:30:38.852" level="INFO">Clicking button 'S'.</msg>
+<status status="PASS" starttime="20210402 14:30:38.851" endtime="20210402 14:30:40.771"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210402 14:30:42.777" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210402 14:30:40.774" endtime="20210402 14:30:42.777"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>https://www.flashback.org</arg>
+</arguments>
+<msg timestamp="20210402 14:30:42.778" level="INFO">Clicking link 'https://www.flashback.org'.</msg>
+<status status="PASS" starttime="20210402 14:30:42.778" endtime="20210402 14:30:44.307"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20210402 14:30:48.321" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210402 14:30:44.318" endtime="20210402 14:30:48.321"></status>
+</kw>
+<kw name="LoginKW">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="navbar-top-menu"]/ul/li[2]/a[1]</arg>
+</arguments>
+<msg timestamp="20210402 14:30:48.324" level="INFO">Clicking element 'xpath://*[@id="navbar-top-menu"]/ul/li[2]/a[1]'.</msg>
+<status status="PASS" starttime="20210402 14:30:48.324" endtime="20210402 14:30:49.022"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210402 14:30:51.022" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210402 14:30:49.022" endtime="20210402 14:30:51.022"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=vb_login_username</arg>
+<arg>${Flashback}[0]</arg>
+</arguments>
+<msg timestamp="20210402 14:30:51.023" level="INFO">Typing text 'BoiBoiElashBoi' into text field 'name=vb_login_username'.</msg>
+<status status="PASS" starttime="20210402 14:30:51.022" endtime="20210402 14:30:51.412"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=vb_login_password</arg>
+<arg>${Flashback}[1]</arg>
+</arguments>
+<msg timestamp="20210402 14:30:51.413" level="INFO">Typing text 'nEzU659Tw&amp;jqX9-' into text field 'name=vb_login_password'.</msg>
+<status status="PASS" starttime="20210402 14:30:51.413" endtime="20210402 14:30:51.772"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name=vb_login_password</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20210402 14:30:51.775" level="INFO">Sending key(s) ('RETURN',) to name=vb_login_password element.</msg>
+<msg timestamp="20210402 14:30:52.095" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20210402 14:30:52.096" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20210402 14:30:51.772" endtime="20210402 14:30:53.072"></status>
+</kw>
+<status status="PASS" starttime="20210402 14:30:48.323" endtime="20210402 14:30:53.072"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<msg timestamp="20210402 14:31:03.074" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20210402 14:30:53.073" endtime="20210402 14:31:03.074"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210402 14:31:03.075" endtime="20210402 14:31:05.719"></status>
+</kw>
+<tags>
+<tag>Sele</tag>
+</tags>
+<status status="PASS" starttime="20210402 14:30:33.125" endtime="20210402 14:31:05.720" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210402 14:30:32.633" endtime="20210402 14:31:05.724"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Sele</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="TestSuiteRobo">TestSuiteRobo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
